@@ -1,0 +1,10 @@
+<h2>Dogs</h2>
+<ul class="dogs">
+    <li *ngFor="let dog of dogs">
+    <button type="button" (click)="onSelect(dog)"  >
+      <img class="icon" src={{dog.getImg()}} width="300" height=" 300">
+      
+      <span class="name" >{{dog.getName()}}</span>
+    </button>
+  </li>
+</ul>

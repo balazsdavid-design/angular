@@ -1,0 +1,8 @@
+<div *ngIf="selectedDog">
+    <h2>{{selectedDog.getName() | uppercase}} Részletek</h2>
+    <div>
+    <div>
+      <label for="kutya-fajta">Kutya fajta: </label>
+      <label id="kutya-fajta">{{selectedDog.getName()}}</label>
+    </div>
+  </div>
